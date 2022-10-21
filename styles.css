@@ -1,0 +1,282 @@
+h1 {
+  font-family: 'Lato', serif;
+  color: #AD1B11;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  color: #83250D;
+  font-size: 1.563rem;
+}
+
+h4 {
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-size: 1.1rem;
+}
+
+.main p {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+  font-size: 0.98rem;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+.topnav {
+  padding: 2rem;
+  display: flex;
+  background-color: white;
+}
+
+.topnav img {
+  height: auto;
+  max-height: 80px;
+  width: auto;
+  max-width: 100%;
+}
+
+.textnav a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+
+.textnav {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.textnav a:hover {
+  color: #83250d;
+  cursor: pointer;
+}
+
+.textnav a.active {
+  color: #83250d;
+}
+
+.textnav .icon {
+  display: none;
+}
+
+
+/*From W3 schools https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/
+/* When the screen is less than 900 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 900px) {
+  .textnav a:not(:first-child) {display: none;}
+  .textnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 900px) {
+  .textnav.responsive {position: relative;}
+  .textnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .textnav.responsive a{
+    float: none;
+    display: block;
+  }
+
+  .textnav.responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .textnav.responsive .home {
+    margin-top: 2em;
+  }
+}
+
+/* Button properties from W2 schools */
+.button {
+  background-color: white;
+  color: #AD1B11;
+  border: 2px solid #AD1B11;
+  text-align: center;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.button1 {
+  border: 2px solid #AD1B11;
+  color: #AD1B11;
+  width: 150px;
+  height: 40px;
+}
+.button1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: #AD1B11;
+  color: white;
+}
+
+.button2 {
+  width: 10%;
+  color: #AD1B11;
+  border: 2px solid #AD1B11;
+  margin-left: 10px;
+  height: 40px;
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: #AD1B11;
+  color: white;
+}
+
+.main {
+  background-color: #EAE9E9;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.main img {
+  margin-top: 5px;
+  max-height: auto;
+  width: auto;
+  max-width: 100%;
+}
+
+.newsletter {
+  margin-bottom: 50px;
+}
+
+
+#fname {
+  width: 35%;
+}
+
+#lname {
+  width: 55%;
+}
+
+#email {
+  width: 80%;
+}
+
+input {
+  height: 40px;
+  margin: 5px;
+}
+
+.online {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#donate {
+  width: 200px;
+  margin-left: 40px;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  background-color: #0b1f3e;
+  padding: 10px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-item {
+  padding: 0.9rem;
+}
+
+.location2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  #fname {
+    width: 100%;
+  }
+  #lname {
+    width: 100%;
+  }
+  #email {
+    width: 100%;
+  }
+  #donate {
+    width: 100%;
+  }
+  .button {
+    width: 100%;
+  }
+  .contact {
+    width: 100%;
+  }
+}
+
+.donation {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: #AD1B11;
+}
+
+.footer a{
+  text-align:center;
+  color: white;
+}
+
+
+input {
+  background-color: white;
+  border: 2px solid #5B5658;
+  border-radius: 5px;
+}
+
+@media (max-width: 1100px) {
+  .donation {
+    justify-content: left;
+  }
+}
+
+.donation img {
+  margin-top: 5px;
+  max-height: auto;
+  max-width: 100%;
+}

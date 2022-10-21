@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>How You Can Help</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/201cdf939b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="topnav">
+        <img src="./providence-promise-logo.png">
+        <div class="textnav" id="myTextnav">
+            <a class="home">Home</a>
+            <a>About</a>
+            <a>Family Engagement</a>
+            <a class="active">Get Involved</a>
+            <a><button class="button button1">Enroll Today!</button></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <div class="main">
+        <img src="./bannerPic.png">
+        <div class="intro">
+            <h1>How You Can Help</h1>
+            <p>Whether you’re looking to share your time, money, or network with us, there are plenty of ways to get
+                involved in this important and exciting work.</p>
+        </div>
+        <div class="content">
+            <div class="newsletter">
+                <h2>Subscribe to our newsletter</h2>
+                <form>
+                    <div class="row">
+                        <input type="text" id="fname" name="fname" class="column" placeholder="First Name">
+                        <input type="text" id="lname" name="lname" class="column" placeholder="Last Name"> <br>
+                    </div>
+                    <div class="row">
+                        <input type="text" id="email" name="email" placeholder="Email">
+                        <button class="button button2">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <h2 style="margin-top: 60px;">Make a donation</h2>
+            <div class="donation">
+                <img src="speaker.jpg">
+                <div>
+                    <div class="online">
+                        <h4>You can make a one-time or monthly donation online</h4>
+                        <button id="donate" class="button button2">Donate online</button>
+                    </div>
+                    <div class="check" style="margin-top: 70px">
+                        <h4>You can donate by check to the following address</h4>
+                        <p style="text-align: left; margin-left: 40px;">Providence Promise<br>
+                            Two Regency Plaza, Suite 4<br>
+                            Providence, Rhode Island 02903</p>
+                    </div>
+                </div>
+                <div class="daf">
+                    <h4>Donor-Advised Fund and Planned Giving</h4>
+                    <ul>
+                        <li>
+                            <p>A <b>donor-advised fund (DAF)</b> is a type of giving program that allows you to combine the
+                                most
+                                favorable tax benefits with the flexibility to easily support your favorite charities. An
+                                increasingly popular charitable vehicle, DAFs are an excellent way to both simplify your
+                                charitable giving and facilitate your strategic philanthropic goals.</p>
+                        </li>
+                        <li>
+                            <p><b>Planned giving</b> allows you to leave a legacy by remembering Providence Promise in your
+                                will.</p>
+                        </li>
+                    </ul>
+                    <p style="margin-left: 20px"><b>You can learn more about the Donor-Advised Fund and Planned Giving <a
+                            href="url">here</a></b></p>
+                </div>
+            </div>
+            <h2 style="margin-top: 60px">Contact us to learn more about ways to get involved</h2>
+            <p>Contact us to inquire about other opportunities to get involved such as: making an in-kind donation, sponsoring events for the organization, and providing grants. </p>
+            <div class="about">
+                <div>
+                    <div class="about-item">
+                        <i class="fa-solid fa-envelope fa-fw fa-lg"></i>
+                        <a href="mailto:info@pvdpromise.org"> info@pvdpromise.org</a>
+                    </div>
+                    <div class="about-item">
+                        <i class="fa-solid fa-phone fa-fw fa-lg"></i>
+                        <a href="tel:401-383-3381">(401) 383-3381</a>
+                    </div>
+                    <div class="about-item location2">
+                        <i class="fa-solid fa-location-dot fa-fw fa-lg"> </i>
+                        Providence Promise <br>Two Regency Plaza, Suite 4 <br> Providence, Rhode Island 02903
+                    </div>
+                </div>
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2973.3498182812123!2d-71.4208538850897!3d41.82076487922674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e4450d52b6e753%3A0x80fe961a2650920d!2s2%20Regency%20plaza%2C%20Providence%2C%20RI%2002903!5e0!3m2!1sen!2sus!4v1666207382286!5m2!1sen!2sus"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <div class="socials">
+            <i class="fa-brands fa-facebook-f" style="padding: 10px"></i>
+            <i class="fa-brands fa-instagram" style="padding: 10px"></i>
+            <i class="fa-brands fa-twitter" style="padding: 10px"></i>
+        </div>
+        <p style="margin-top: -3px">@pvdpromise</p>
+        <a href="">Ver Esta Página en Español</a>
+        <p>© 2017 Providence Promise</p>
+    </div>
+
+    <script>
+        /** From w3 schools https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/
+        function myFunction() {
+            console.log('worked');
+        var x = document.getElementById("myTextnav");
+        if (x.className === "textnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "textnav";
+        }
+        }
+    </script>
+</body>
+
+</html>
